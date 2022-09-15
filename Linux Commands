@@ -1,0 +1,7 @@
+
+#for os information
+lsb_release -a 
+#edit printenv 
+export SHELL=/usr/bin/bash
+sudo usermod -s /usr/bin/bash $(whoami)
+#
