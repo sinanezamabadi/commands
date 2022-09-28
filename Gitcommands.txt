@@ -1,0 +1,91 @@
+    1  history 
+    2  cd Desktop/GIT
+    3  git config --global user.name "sina nezamabadi"
+    4  git config --global user.email "sina.nezamabadi@gmail.com"
+    5  code
+    6  git config --global core.editor "code --wait"
+    7  git config --global -e
+    8  git config --global core.autocrlf 
+    9  git config --global core.autocrlf input
+   10  git config -h
+   11  git init 
+   12  ls -a
+   13  open .git
+   14  rm -rf .git
+   15  git init 
+   16  echo hello > file.txt
+   17  echo hello > file2.txt
+   18  git status 
+   19  git add .
+   20  git status 
+   21  echo world >> file.txt 
+   22  git status 
+   23  git add file.txt 
+   24  git status 
+   25  git commit -m "initial commit."
+   26  echo test >> file.txt
+   27  git commit -am "fix bug"
+   28  rm file2.txt 
+   29  git status
+   30  git ls-files
+   31  git add file2.txt 
+   32  git ls-files
+   33  git status 
+   34  git commit -m "remove file 2"
+   35  mv file.txt main.js
+   36  git status
+   37  git add file.txt 
+   38  git add main.js 
+   39  git status
+   40  git mv main.js file1.txt
+   41  git status 
+   42  git commit -m "refactor files:
+   43  git commit -m "refactor files"
+   44  git status 
+   45  mkdir logs
+   46  echo hello > logs/dev.log
+   47  git status 
+   48  echo logs/ > .gitignore
+   49  code .gitignore 
+   50  git status 
+   51  git add .gitignore 
+   52  git commit -m "add git ignore"
+   53  git ls-files
+   54  git rm --cached file1.txt 
+   55  git status 
+   56  git rm --cached -r file1.txt 
+   57  git status 
+   58  git status -s
+   59  git add .
+   60  git status -s
+   61  git diff --staged 
+   62  echo salam2 >> file1.txt 
+   63  git diff --staged 
+   64  git sta
+   65  git status 
+   66  git add file1.txt 
+   67  git status 
+   68  git diff --staged 
+   69  git diff
+   70  git diff -s
+   71  code file1.txt 
+   72  git config --global diff.tool vscode
+   73  git config --global.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+   74  git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+   75  git config --global -e
+   76  git difftool
+   77  git difftool --staged
+   78  git log
+   79  git log --oneline 
+   80  git log --oneline  --reverse 
+   81  git show 57
+   82  git ls-tree
+   83  git restore --staged file1.txt
+   84  git status -s
+   85  git restore file1.txt
+   86  git status -s
+   87  git clean 
+   88  git clean -h
+   89  git clean -fd
+   90  git status -s
+   91  history > Gitcommands.txt
